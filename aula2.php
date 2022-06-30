@@ -1,43 +1,40 @@
-<?php 
+<?php
 print_r($_POST);
 
-//echo "olá a todos!";
+// echo "Olá a todos!";
 if(isset($_POST['nome'])){
 
 }
 ?>
 <center>
-    <a>Eai</a>
-    <h1>Eai2</h1>
-    <h2>Eai3</h2>
+    <a>Oie</a><br>
+    <h1>Oie2</h1><br>
+    <h2>Oie3</h2><br>
     <a href="aula3.php">Voltar</a>
-    <form action="" method= "POST">
+    <form action="" method="POST">
         <label>
-            <b style="color:red;">Irnforme o seu Nome:</b>
-        </label>
-        <input type="text" name="nome"><br><br>
-
+            <b style="color:#9327B8;"> texto =</b>
+            <b style="color:red;">Informe o seu Nome:</b>
+        </label> 
+        <input type="text" name="nome"><br>
+        
         <label>
-            <b>Informe o seu ,
-                <b style="color:blue;">Sobrenome</b>:
-            </b>
+            <b>Informe o seu sobrenome:</b>
         </label>
-        <input type="text" name="sobrenome"><br><br>
+        <input type="text" name="sobrenome"><br>
 
         <label>
             <b>Informe a sua idade:</b>
         </label>
-        <input type="number" name="idade"><br><br>
+        <input type="number" name="idade"><br>
 
         <label>
             <b>Informe a sua data de nascimento:</b>
         </label>
-        <input type="date" name="data de nascimento"><br><br>
+        <input type="date" name="nascimento"><br>
 
         <button type="submit">Gravar</button>
-
     </form>
-
-    <img src="imagens/moto2.png" width="25%" height= "25%">
-    <img src="imagens/moto.png" width="25%" height= "25%">
+    <!--  <img src="imagens/carro.png" width="100px" height="100px"> -->
+    <img src="imagens/carro.png" width="100%" height="300em">
 </center>

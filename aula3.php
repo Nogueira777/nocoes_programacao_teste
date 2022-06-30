@@ -1,50 +1,36 @@
 <html>
     <head>
-    <title>Nosso primeiro sistema</title>
+        <title>Nosso primeiro Sistema</title>
     </head>
-    <center>
-    <body bgcolor="purple">
-    <form action="" method="POST">
+    <body bgcolor="gray">
+        <form action="" method="POST">
+            <center>
+                <h1 style="color:white;">Cadastro de Alunos</h1><br>
+                <label style="color:white;">Nome</label><br>
+                <input type="text" name="nome"> <br>
 
-        <h1>Formulário</h1><br><br>
+                <label style="color:white;">RG</label><br>
+                <input type="text" name="rg"> <br>
 
-        <label>
-            <b>Nome:</b>
-        </label>
-        <input type="text" name="nome"><br><br>
+                <label style="color:white;">CPF</label><br>
+                <input type="text" name="cpf"> <br>
 
-        <label>
-            <b>CPF:</b>
-        </label>
-        <input type="number " name="cpf"><br><br>
-
-        <label>
-            <b>Data de nascimento:</b>
-        </label>
-        <input type="date" name="nascimento"><br><br>
-
-
-        <label>
-            <b>Serie:</b>
-        </label>
-        <input type="text" name="serie"><br><br>
-
-       
-        <label>
-            <b>Email:</b>
-        </label>
-        <input type="text" name="email"><br><br>
-
-        <button type="submit">Salvar</button><br><br>
-
-</center>
-    </form>
+                <label style="color:white;">Idade</label><br>
+                <input type="text" name="idade"> <br>
+                
+                <button type="submit">Salvar</button>
+            </center>
+        </form>
     </body>
 </html>
 <?php
-if(isset($_POST['nome']) && isset($_POST['cpf']) && isset($_POST['nascimento']) && isset($_POST['serie']) && isset($_POST['email'])){
-
-
-    echo "<h2 style= 'color:white;'> Seu cadastro foi efetuado com sucesso!</h>";
+if(isset($_POST['nome']) && isset($_POST['rg'])){
+    if($_POST['nome'] == ""){
+        echo "<h2 style='color:red;'>O nome não foi informado</h2>";
+    }else if($_POST['nome'] == "Mateus"){
+        echo "o nome é mateus";
+    }else{
+        echo "<h2 style='color:green;'>Seu cadastro foi efetuado com Sucesso!</h2>";
+    }
 }
 ?>
